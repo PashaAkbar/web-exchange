@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stock Data Display</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="light-theme">
+    <div id="top-bar">
+      <button id="toggle-theme">Toggle Theme</button>
+    </div>
+    <div id="container">
+      <select id="exchange-select">
+        <option value="0">SGX</option>
+        <option value="2">Bursa</option>
+        <option value="3">Nasdaq</option>
+      </select>
+      <div id="table-header">
+        <span id="top-volume" class="header active" data-list="0"
+          >Top Volume</span
+        >
+        <span id="top-gainers" class="header" data-list="1">Top Gainers</span>
+        <span id="top-losers" class="header" data-list="2">Top Losers</span>
+      </div>
+      <table id="stock-table">
+        <thead>
+          <tr>
+            <th>Stock Name</th>
+            <th>Code</th>
+            <th>Last</th>
+            <th>Vol</th>
+            <th>Buy</th>
+            <th>Buy Vol</th>
+            <th>Sell</th>
+            <th>Sell Vol</th>
+            <th>+/-</th>
+            <th>%chg</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
